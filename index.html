@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake for Nerds</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #111, #333);
+      color: #eee;
+      font-family: monospace;
+      text-align: center;
+    }
+    #container {
+      padding-top: 20px;
+    }
+    canvas {
+      border: 1px solid #eee;
+      background-color: #000;
+      margin-top: 20px;
+    }
+    #scoreboard {
+      max-width: 400px;
+      margin: 20px auto;
+      text-align: left;
+    }
+    #scoreboard h2 {
+      margin: 0 0 5px;
+    }
+    #scores li {
+      list-style: none;
+      padding: 2px 0;
+      border-bottom: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>Snake for Nerds</h1>
+    <p>Use the arrow keys to control the snake. Eat the food to grow. Don't crash into yourself or the wall!</p>
+    <canvas id="game" width="400" height="400"></canvas>
+    <div id="scoreboard">
+      <h2>High Scores</h2>
+      <ol id="scores"></ol>
+    </div>
+  </div>
+  <script src="snake.js"></script>
+</body>
+</html>
